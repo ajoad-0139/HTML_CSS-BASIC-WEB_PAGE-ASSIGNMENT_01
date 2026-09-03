@@ -1,0 +1,27 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body */
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+h1{
+    color: rgb(29, 37, 29);
+    font-weight: 400;
+    margin-top: 16px;
+    font-size: 26px;
+}
+
+.items-start{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

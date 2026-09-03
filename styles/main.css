@@ -1,0 +1,23 @@
+/* Main layout */
+.main-layout {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+}
+
+/* Left */
+.main-left-section {
+    flex: 1;
+    padding-left: 24px;
+    padding-top: 12px;
+}
+
+/* Right */
+.main-right-section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
