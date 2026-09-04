@@ -12,6 +12,7 @@ nav{
     padding-left: 12px;
     padding-right: 8px;
     background-color:#2C5745;
+    z-index: 1000;
 }
 
 /* nav left section */
@@ -31,6 +32,7 @@ nav{
     font:lighter;
     font-family: "Google Sans";
     font-size: xx-large;
+    color: white;
 }
 
 .banner-logo{
@@ -66,7 +68,7 @@ nav{
 }
 
 .nav-link:hover{
-    color: blue;
+    color: rgb(61, 243, 61);
     cursor: pointer;
 }
 
