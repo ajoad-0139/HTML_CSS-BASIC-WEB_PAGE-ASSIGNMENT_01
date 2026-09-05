@@ -97,14 +97,15 @@
 .course-feature-section-weather {
 
     width: 100%;
-    border: gray solid 1px;
+    border: rgb(214, 206, 206) solid 1px;
     border-bottom-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     padding: 28px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    padding-bottom: 48px;
 
 }
 
