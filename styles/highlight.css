@@ -20,6 +20,16 @@
     gap: 20px;
 }
 
+@media(max-width:1024px){
+    .highlight-top-section-cards-container{
+        margin-top: 24px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
 .highlight-top-section-single-card-container{
     background-color: white;
     border-radius: 8px;

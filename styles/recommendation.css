@@ -42,6 +42,8 @@
     fill: rgb(46, 151, 78);
 }
 
+
+
 .recommendation-cards-and-map-container{
     width: 100%;
     height: 610px;
@@ -49,6 +51,8 @@
     gap: 18px;
     margin-top: 16px;
 }
+
+
 
 .recommendation-cards-container{
     flex: 3;
@@ -70,7 +74,7 @@
 }
 
 .recommendation-single-card-image-section{
-    flex: 1;
+    flex: 2;
     min-height: 0;
     width: 100%;
     border-top-right-radius: 8px;
@@ -151,7 +155,8 @@
 }
 
 .recommendation-single-card-details-section{
-    flex: 2;
+    flex-shrink: 0;
+    flex: 3;
     min-height: 0;
     width: 100%;
     padding: 4px;
@@ -181,6 +186,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .recommendation-single-card-overlay-icon{
@@ -257,7 +263,7 @@
     justify-content: start;
     width: 100%;
     height: 28px;
-    margin-top: 12px;
+    margin-top: 16px;
     gap: 4px;
 }
 
@@ -308,9 +314,10 @@
 
 .pagination-of-recommendation-page-separator{
 
-    font-size: medium;
+    font-size: xx-small;
 
-    font-weight: 900;
+    font-weight: 500;
+    opacity: 0.5;
 
 }
 
@@ -397,4 +404,50 @@
 
     border-radius: 30px;
 
+}
+
+
+@media (max-width: 1024px) {
+
+    .recommendation-cards-and-map-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    /* MAP */
+    .recommendation-maps-container {
+        order: 1;
+        width: 100%;
+        height: 300px;
+        min-width: 0;
+        flex-shrink: 0;
+    }
+
+    .recommendation-map-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* CARDS */
+    .recommendation-cards-container {
+        order: 2;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 12px;
+        overflow: hidden;
+    }
+
+    .pagination-of-recommendation-container {
+        width: 100%;
+    }
 }

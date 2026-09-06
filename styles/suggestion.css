@@ -9,6 +9,12 @@
     margin-top: 24px;
 }
 
+@media(max-width:1024px) {
+    .course-suggestion-section{
+        display: none;
+    }
+}
+
 .course-suggestion-section-container {
     padding-bottom: 18px;
     width: 100%;
