@@ -295,6 +295,20 @@
     padding-right: 22px;
 }
 
+@media(max-width:767px) {
+    .tablet-view-hero-section-container-bottom-up-container{
+        width: 100%;
+        flex-direction: column;
+        height: 50px;
+        overflow-y: hidden;
+        gap: 12px;
+        padding-left: 22px;
+        padding-right: 22px;
+        overflow-x: hidden;
+        justify-content: start;
+    }
+}
+
 .tablet-view-hero-section-container-bottom-up-container-single{
     display: flex;
     flex-direction: column;
