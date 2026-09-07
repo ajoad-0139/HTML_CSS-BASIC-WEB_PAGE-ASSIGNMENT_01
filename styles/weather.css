@@ -119,7 +119,8 @@
 .course-feature-section-weather-container {
 
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 
 }
@@ -170,4 +171,48 @@
 
     opacity: 0.8;
 
+}
+
+
+@media(max-width:767px) {
+    .weather-header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 4px; */
+        margin-bottom: 8px;
+    }
+    .weather-forecast-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+    .weather-section {
+        height: auto;
+    }
+    .weather-header-location{
+        margin-top: 12px;
+    }
+    .weather-forecast-container{
+        margin-bottom: 8px;
+    }
+    .course-feature-section-weather{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .course-feature-section-weather-container{
+        grid-template-columns: 1fr;
+    }
+    .course-feature-section-weather-single-container:nth-child(n+2){
+        display: none;
+    }
+    .course-feature-section-weather-single-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .course-feature-section-weather-single-container p{
+        /* width: 30%; */
+        text-align: center;
+    }
 }

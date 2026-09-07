@@ -18,6 +18,7 @@
     margin-top: 24px;
 }
 
+
 .course-feature-section-single-container {
     flex: 1;
     display: flex;
@@ -67,4 +68,21 @@
     font-size: 14px;
     opacity: 0.8;
     margin-top: 8px;
+}
+
+
+@media (max-width:767px) {
+    .course-feature-section-container{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .course-feature-section-best-time-heading {
+        width: 60%;
+        text-align: center;
+        align-self: center;
+    }
+    .course-feature-section-best-time-description {
+        text-align: center;
+    }
 }

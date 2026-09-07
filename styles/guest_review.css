@@ -17,6 +17,9 @@
     margin-top: 24px;
 }
 
+
+
+
 .guest-review-section-single-card-container{
     flex: 1;
     display: flex;
@@ -27,6 +30,28 @@
     border: rgb(202, 193, 193) solid 1px;
     border-radius: 4px;
     
+}
+
+@media(max-width:767px) {
+    .guest-review-section-cards-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+    .guest-review-section h1{
+        align-self: center;
+        width: 30%;
+        text-align: center;
+    }
+    .guest-review-section-single-card-container{
+        width: 60%;
+        align-items: center;
+    }
+    .guest-review-section-single-card-review-text{
+        width: 30%;
+        text-align: center;
+    }
 }
 
 .guest-review-section-single-card-date-rating-container {

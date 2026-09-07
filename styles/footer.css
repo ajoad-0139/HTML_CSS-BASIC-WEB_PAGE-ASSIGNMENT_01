@@ -2,7 +2,7 @@
 
 .footer-section{
 
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     margin-top:20vh;
     position: relative;
@@ -44,8 +44,11 @@
     z-index: 50;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -62,6 +65,12 @@
     align-items: stretch;
     justify-content: start;
     gap: 64px;
+}
+
+@media (max-width:1024px) {
+    .footer-section-container{
+        flex-direction: column;
+    }
 }
 
 .footer-section-social-container {
@@ -145,4 +154,90 @@
 .footer-section-brand-description-text {
     font-size: small;
     color: rgb(52, 182, 52);
+}
+
+
+@media (max-width: 767px) {
+
+    .footer-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 48px;
+    }
+    .footer-section-background-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .footer-section-overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 70;
+        padding: 40px 24px;
+        box-sizing: border-box;
+    }
+
+    .footer-section-content {
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+
+    .footer-section-container {
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+    .footer-link-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 100%;
+    }
+
+    .footer-link-container-column {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
+    .footer-section-social-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-section-social-icons {
+        justify-content: center;
+    }
+
+    .footer-section-select-container {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .footer-section-brand-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .footer-section-brand-divider {
+        display: none;
+    }
+
+    .footer-section-brand-description {
+        align-items: center;
+    }
 }
